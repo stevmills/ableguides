@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environment
+.venv/
+venv/
+
+# IDE
+.cursor/
+.vscode/
+*.swp
+*.swo
+
+# Secrets (API keys)
+.env
+
+# User config (personal paths -- copy from ableguides.toml.example)
+ableguides.toml
+
+# Generated audio files (large, user-specific)
+output/
+
+# Ableton analysis files
+*.asd
+
+# Windows Zone Identifier files
+*:Zone.Identifier
+
+# pytest
+.pytest_cache/
+htmlcov/
+.coverage

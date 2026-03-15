@@ -1,0 +1,65 @@
+# ableguides.toml -- configuration for the ableguides cue pack builder
+#
+# Copy this file to ableguides.toml and fill in paths for your system.
+# Precedence: CLI flag > ableguides.toml > built-in default.
+
+[paths]
+# Root directory where generated WAV files are stored.
+# For WSL → Windows output, use the /mnt/<drive>/... path.
+output_dir = "/mnt/c/Users/YOUR_USERNAME/Music/Ableton/GuidePacks"
+
+# Path to cues.json (relative or absolute). Default: cues.json next to this file.
+cues_file = "cues.json"
+
+# Directory where generated MIDI clips are stored.
+midi_dir = "/mnt/c/Users/YOUR_USERNAME/Music/Ableton/GuidePacks/MIDI"
+
+[elevenlabs.tts]
+# Voice generation settings for ElevenLabs (0.0–1.0 unless boolean).
+# These defaults are tuned for uniform, declarative cue delivery.
+#
+# stability:         Higher = more consistent across takes (0.0 = variable, 1.0 = robotic)
+# similarity_boost:  How closely output matches the trained voice
+# style:             0.0 disables style exaggeration — keep at 0 for uniform cues
+# use_speaker_boost: Improves similarity but adds expressiveness; keep false for cues
+# seed_salt:         XOR'd with every per-cue seed. Bump this integer if any cue generates
+#                    in the wrong language or sounds wrong — shifts all seeds without losing
+#                    determinism.
+stability         = 1.0
+similarity_boost  = 0.9
+style             = 0.0
+use_speaker_boost = false
+seed_salt         = 0
+
+# ElevenLabs API voices to generate. Each key is a short name used for folder
+# naming and Ableton chain labels; the value is the ElevenLabs voice_id.
+# Get voice IDs from https://elevenlabs.io/app/voice-library or the API.
+#
+# Example:
+#   [elevenlabs.voices]
+#   guide_male   = "21m00Tcm4TlvDq8ikWAM"
+#   guide_female = "EXAVITQu4vr4xnSDxMaL"
+[elevenlabs.voices]
+# caty      = "54Cze5LrTSyLgbO6Fhlc"
+# ana       = "rCmVtv8cYU60uhlsOo1M"
+# lucy      = "lcMyyd2HUfFzxdCaC4Ta"
+# emma      = "S9EGwlCtMF7VXtENq79v"
+# matt      = "YCxeyFA0G7yTk6Wuv2oq"
+# ben       = "sai9UY7iXkRDSsXHR0bZ"
+# royce     = "omRordDZNt4Gy45cetUa"
+# johnny    = "8JVbfL6oEdmuxKn5DK2C"
+
+[midi]
+# Time signatures to generate count-in MIDI clips for.
+# Supported: "4/4", "3/4", "2/4", "5/4", "6/8", "12/8"
+# Each time signature gets its own subfolder in midi_dir (e.g. midi_dir/3-4/).
+# Trigger-only clips (no count-in) are always generated in midi_dir root.
+time_signatures = ["4/4", "3/4", "6/8"]
+
+[rack]
+# Directory where generated .adg Ableton preset files will be written.
+presets_dir = "/mnt/c/Users/YOUR_USERNAME/OneDrive/Documents/Ableton/User Library/Presets/Instruments/Instrument Rack/GuidePacks"
+
+# Windows path to the GuidePacks root (used inside .adg XML so Ableton on
+# Windows can locate the WAV files).
+guide_pack_windows_root = "C:\\Users\\YOUR_USERNAME\\Music\\Ableton\\GuidePacks"
