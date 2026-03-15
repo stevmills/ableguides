@@ -1,4 +1,4 @@
-# ableguides
+# AbleGuides
 
 A Python CLI that generates spoken guide cue audio via [ElevenLabs TTS](https://elevenlabs.io) and assembles them into ready-to-load Ableton Live Instrument Rack presets and MIDI clips.
 
