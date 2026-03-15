@@ -112,7 +112,7 @@ ableguides --dry-run generate          # preview without API calls
 ### `build` — Assemble Ableton presets
 
 ```bash
-ableguides build                       # all voices → GUIDE-MASTER.adg
+ableguides build                       # all voices → AbleGuides.adg
 ableguides build --voice guide_male    # single-voice preset only
 ```
 
@@ -178,7 +178,7 @@ output_dir/
 
 ```
 presets_dir/
-  GUIDE-MASTER.adg    # all voices on Chain Selector (load this one)
+  AbleGuides.adg      # all voices on Chain Selector (load this one)
   guide-male.adg      # single-voice preset
   guide-female.adg
 ```

@@ -26,7 +26,7 @@ log = logging.getLogger(__name__)
 _TEMPLATES_DIR = Path(__file__).parent.parent.parent / "templates"
 
 # The outer rack preset filename written to presets_dir.
-_OUTPUT_FILENAME = "GUIDE-MASTER.adg"
+_OUTPUT_FILENAME = "AbleGuides.adg"
 
 
 def assemble_rack(

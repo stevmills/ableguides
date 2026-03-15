@@ -146,8 +146,8 @@ def _build_parser() -> argparse.ArgumentParser:
     bld.add_argument(
         "--output-name",
         metavar="FILENAME",
-        default="GUIDE-MASTER.adg",
-        help="Filename for the assembled master rack (default: GUIDE-MASTER.adg)",
+        default="AbleGuides.adg",
+        help="Filename for the assembled master rack (default: AbleGuides.adg)",
     )
 
     # midi

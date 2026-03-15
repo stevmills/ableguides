@@ -29,7 +29,7 @@
 							<FileRef>
 								<RelativePathType Value="1" />
 								<RelativePath Value="" />
-								<Path Value="GUIDE-MASTER.adg" />
+								<Path Value="AbleGuides.adg" />
 								<Type Value="1" />
 								<LivePackName Value="" />
 								<LivePackId Value="" />
@@ -42,7 +42,7 @@
 				<LockedScripts />
 				<IsFolded Value="false" />
 				<ShouldShowPresetName Value="true" />
-				<UserName Value="GUIDE-MASTER" />
+				<UserName Value="AbleGuides" />
 				<Annotation Value="" />
 				<SourceContext>
 					<Value />
@@ -438,7 +438,7 @@
 				<FileRef>
 					<RelativePathType Value="1" />
 					<RelativePath Value="" />
-					<Path Value="GUIDE-MASTER.adg" />
+					<Path Value="AbleGuides.adg" />
 					<Type Value="1" />
 					<LivePackName Value="" />
 					<LivePackId Value="" />
